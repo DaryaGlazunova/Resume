@@ -1,0 +1,108 @@
+.experience {
+    background-color: $backgroundColorLightGrey;
+    border-radius: 80px;
+
+    &_container {
+        display: flex;
+        padding: 100px 0 50px 0;
+    }
+
+    &__column-left {
+        flex: 0 1 40%;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        
+    }
+    &__column-right {
+        flex: 0 1 60%;
+        padding: 50px 0 50px 30px;
+    }
+
+    &__title {}
+
+    &__image {
+        margin-top: 40px;
+        max-width: 361px;
+        
+        & img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &__text {}
+
+    &__job-title {
+        font-family: $minorFont;
+        font-size: 18px;
+        color: $fontColorBlack;
+        margin-bottom: 8px;
+    }
+
+    &__company {
+        font-family: $mainFont;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.71;
+        color: $fontColorGrey;
+        margin-bottom: 16px;
+    }
+
+    &__period {
+        font-family: $mainFont;
+        font-size: 14px;
+        color: $fontColorGrey;
+        margin-bottom: 30px;
+    }
+
+    &__line {
+        height: 1px;
+        width: 100%;
+        background-color: $backgroundColorLightGrey;
+        margin-bottom: 30px;
+    }
+
+    &__slider {
+        font-size: 16px;
+        color: $fontColorGrey;
+        line-height: 20px;
+        & li ul li:first-child{
+            margin-top: 10px;  
+        }
+
+        & li ul li{
+            padding-left: 20px;
+            margin-bottom: 10px;
+            position: relative;
+           
+        }
+
+        & li ul li::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 1px;
+            width: 16px;
+            background-color: $fontColorGrey;
+            opacity: 0.6;
+        }
+    }
+}
+
+
+@media(max-width:850px) {
+    .experience {
+        &_container {
+            flex-direction: column;
+            padding: 50px 0 0 0;
+        }
+        &__column-left {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+    }
+}

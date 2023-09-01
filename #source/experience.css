@@ -1,0 +1,26 @@
+.experience {
+  background-color: aquamarine;
+}
+.experience_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.experience_container div:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+.experience_container div:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+}
+.experience__image {
+  position: relative;
+}
+.experience__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}

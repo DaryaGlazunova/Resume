@@ -1,0 +1,109 @@
+.portfolio {
+    background-color: $backgroundColorLightGrey;
+    border-radius: 80px;
+
+    &_container {
+        padding: 70px 0;
+    }
+
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        margin: 0 0 50px 0;
+
+    }
+
+    &__body {
+        
+    }
+
+    &__works {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    &__work {
+        flex: 0 1 33.333%;
+        margin-bottom: 30px;
+    }
+
+    &__work-image {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        margin-bottom: 20px;
+        & img{
+            display: block;
+            border-radius: 30px;
+            width: 100%;
+            height: 100%;
+            
+           
+        }
+
+        &:before{
+            content:'';
+            position: absolute;
+            border-radius: 30px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(156, 167, 150);
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);    
+            opacity: 0.8;
+        }
+    }
+
+    &__work-title {
+        font-family: $minorFont;
+        font-size: 18px;
+        font-weight: 700;
+        color: $fontColorBlack; 
+        margin-bottom: 5px;
+    }
+
+    &__work-link {
+        font-family: $mainFont;
+        font-size: 16px;
+        font-weight: 700;
+        color: $fontColorGrey;
+        text-decoration: underline;
+    }
+}
+
+
+.goToGitHub{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 4px;
+    padding-top: 35%;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        background-color: rgb(156, 167, 150);
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+}

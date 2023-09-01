@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Hi! It's me</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <div class="header__logo-img">
+                        <img src="./img/header/logo.svg" alt="">
+                    </div>
+                    <div class="header__logo-text">
+                        Дарья.
+                    </div>
+                </div>
+                <div class="header__menu menu">
+                    <div class="menu__burger" onclick="showMenu()">
+                        <span></span>
+                    </div>
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li>
+                                <a href="#experience" class="menu__item" onclick="removeMenu()">Опыт работы</a>
+                            </li>
+                            <li>
+                                <a href="#skills" class="menu__item" onclick="removeMenu()">Навыки</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="menu__item" onclick="removeMenu()">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="#contacts" class="menu__item" onclick="removeMenu()">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__resume">
+                    <a href="https://hh.ru/resume/f0cdb45bff0beb869a0039ed1f6b797a467068" target="_ blank" class="header__resume-btn">
+                        <span>Резюме</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="about">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__text">
+                           <div class="about__title title">
+                                <div class="title__top">
+                                    <span>Меня зовут</span>
+                                </div>
+                                <div class="title__bottom">
+                                    Глазунова <span>Дарья</span>
+                                </div>
+                           </div> 
+                           <div id = "aboutText" class="about__paragraf">Привет! Я начинающий front-end разработчик. В мире IT я не новичок, раньше я 5 лет занималась разработкой программных роботов (RPA). Но решила попробовать себя в чем-то новом и сменить сферу деятельности на веб-разработку. Поэтому сейчас я нахожусь в активном поиске стажировок и ванксий для Junior-специалиста :)</div>
+                           <div class="about__social-madia">
+                                <ul class="about__social-madia-list">
+                                    <li>
+                                        <a href="#" class="about__social-madia-item">
+                                            <img src="./img/main-page/instagram.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="about__social-madia-item">
+                                            <img src="./img/main-page/twitter.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>
+                        <div class="about__media">
+                                <div class="media">
+                                <div class="media__image">
+                                    <img src="./img/about/myphoto.jpg" alt="">
+                                </div>
+                                <div class="media__decor"> </div>
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience" >
+                <a name = "experience"></a>
+                <div class="container">
+                <div class="experience_container">
+                    <div class="experience__column-left">
+                        <div class="experience__title title">
+                            <div class="title__top">
+                                <span>Карьерный путь</span>
+                            </div>
+                            <div class="title__bottom">
+                                Опыт работы
+                            </div>
+                        </div>
+                        <div class="experience__image">
+                            <img src="./img/experience/robot.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="experience__column-right">
+                        <div class="experience__text">
+                            <div class="experience__job-title">RPA-разработчик, ведущий специалист</div>
+                            <div class="experience__company">Норникель Спутник</div>
+                            <div class="experience__period">Июль 2019 - май 2023</div>
+                            <div class="experience__line"></div>
+                            <div class="experience__slider slider">
+                                <div class="slider__wrapper">
+                                        <ul class="slider__items">
+                                            <li class="slider__item slider__item_active">Внедрение, разработка, эксплуатация и поддержка программных роботов.</li>
+                                            <li class="slider__item">Анализ и проработка процессов для роботизации.</li>
+                                            <li class="slider__item">Формирование и актуализация проектной документации программных роботов (ТЗ, сценарии тестирования, инструкции, протоколы запуска).</li>
+                                            <li class="slider__item">Осуществление наставничества для менее квалифицированных сотрудников.</li>
+                                            <li class="slider__item"> Внедрение и развитие функционала очередей.</li>
+                                            <li class="slider__item">С 2022 года в рамках миграции на отечественное ПО выполняла роль Архитектора. В основные задачи входило:
+                                                <ul>
+                                                    <li>Тестирование и выбор нового отечественного ПО для роботизации процессов.</li>
+                                                    <li>Формирование требований к вендору в части недостающего функционала, а также тестирование выдвинутых требований.</li>
+                                                    <li>Разработка и совершенствование фреймворка на новом ПО.</li>
+                                                    <li>Осуществление контроля качества кода программных роботов, которые были мигрированы на новое ПО.</li>
+                                                    <li>Формирование подхода к использованию очередей на новом ПО.</li>
+                                                    <li>Формирование инструкций и консультация коллег по работе с новым ПО.</li>
+                                                </ul>
+                                                
+                                              </li>
+                                        </ul>
+                                </div>  
+                                <div class="slider__buttons">
+                                    <button class="slider__btn slider__btn-prev" onclick="movePrev()"><-</button>
+                                    <button class="slider__btn slider__btn-next" onclick="moveNext()">-></button>
+                                </div>
+                            </div>
+                                
+                                
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>  
+            </div>
+
+            <div class="skills">
+                <a name = "skills"></a>
+                <div class="skills__container" name="experience">
+                    <div class="container">
+                      <div class="skills__title title">
+                        <div class="title__top">
+                            <span>Ключевые навыки</span>
+                        </div>
+                        <div class="title__bottom">
+                            Мои hard и soft скиллы
+                        </div>
+                      </div>
+                      <div class="skills__swiper">
+                            
+                           
+                            <div class="swiper-container">
+                                <div  class="swiper sample-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="skills__topic">
+                                                <div class="skills__image">
+                                                    <img src="./img/skills/html.svg" alt="">
+                                                </div>
+                                                <div class="skills__text">
+                                                    <ul>
+                                                        <li>Верстка по макетам</li>
+                                                        <li>Адаптивная верстка </li>
+                                                    </ul> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="skills__topic">
+                                                <div class="skills__image">
+                                                    <img src="./img/skills/CSS.svg" alt="">
+                                                </div>
+                                                <div class="skills__text">
+                                                    <ul>
+                                                        <li>SASS/SCSS</li>
+                                                        <li>BEM</li>
+                                                        <li>Работа с Figma, Photoshop, Zeplin</li>
+                                                        <li>flexbox layout</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="skills__topic">
+                                                <div class="skills__image">
+                                                    <img src="./img/skills/js.svg" alt="">
+                                                </div>
+                                                <div class="skills__text">
+                                                   <ul>
+                                                    <li>Понимание основ JS: типы данных, переменные, функции, объекты, массивы, области видимости, циклы</li>
+                                                    <li>Понимание асинхронного программирования: Event loop, callbacks, promises, async/await/bind</li>
+                                                    <li>Понимание прототипного наследования и классов</li>
+                                                    <li>Навыки манипуляций DOM и обработки событий</li>
+                                                   </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="skills__topic">
+                                                <div class="skills__image">
+                                                    <img src="./img/skills/github.svg" alt="">
+                                                </div>
+                                                <div class="skills__text">
+                                                    <ul>
+                                                        <li>Понимание необъодимости использования гита</li>
+                                                        <li>Знание основных комманд</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="skills__topic">
+                                                <div class="skills__image">
+                                                    <img src="./img/skills/react.svg" alt="">
+                                                </div>
+                                                <div class="skills__text">
+                                                    <ul>
+                                                        <li>Начальные навыки использования react. На данный момент нахожусь на этапе его изучения.</li>
+                                                    </ul>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="skills__topic">
+                                                <div class="skills__image">
+                                                    <img src="./img/skills/soft-skills..png" alt="">
+                                                </div>
+                                                <div class="skills__text">
+                                                    <ul>
+                                                        <li>Навыки планирования своего времени, agile, scrum</li>
+                                                        <li>Коммуникабельность, умение работать в команде</li>
+                                                        <li>Обучаемость и адаптация</li>
+                                                        <li>
+                                                            <span class="catMem">Стрессоустойчивость (наведи на меня мышку)</span>
+                                                        </li>
+                                                        <li>Внимательность и ответственность</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <button class="swiper-button-prev"></button>     
+                                <button class="swiper-button-next"></button>
+                            </div>
+                            
+                      </div>
+
+                </div>
+            </div>
+            </div>
+
+            <div class="portfolio" >
+                <a name = "portfolio"></a>
+                <div class="container">
+                <div class="portfolio_container">
+
+                        <div class="portfolio__title title">
+                            <div class="title__top">
+                                <span>Портфолио</span>
+                            </div>
+                            <div class="title__bottom">
+                                Мои работы
+                            </div>
+                        </div>
+
+                        <div class="portfolio__body">
+                            <div class="portfolio__works">
+                                <div class="portfolio__work">
+                                    <div class="portfolio__work-image">
+                                        <img src="./img/portfolio/resume.png.jpg" alt="">
+                                    </div>
+                                    <div class="portfolio__work-title">
+                                        Мое резюме (html, css, js)
+                                    </div>
+                                    <a class="portfolio__work-link" href="https://daryaglazunova.github.io/" target="_blank">DaryaGlazunova.github.io</a>
+                                </div>
+                                <div class="portfolio__work">
+                                    <div class="portfolio__work-image">
+                                        <img src="./img/portfolio/cryptopunks.png" alt="">
+                                    </div>
+                                    <div class="portfolio__work-title">
+                                        Cryptopunks (html, css, js)
+                                    </div>
+                                    <a class="portfolio__work-link" href="https://daryaglazunova.github.io/" target="_blank">DaryaGlazunova.github.io</a>
+                                </div>
+                                <div class="portfolio__work">
+                                    <div class="portfolio__work-image">
+                                        <img src="./img/portfolio/goCorona.png" alt="">
+                                    </div>
+                                    <div class="portfolio__work-title">
+                                        GoCorona (html, css)
+                                    </div>
+                                    <a class="portfolio__work-link" href="https://daryaglazunova.github.io/" target="_blank">DaryaGlazunova.github.io</a>
+                                </div>
+                                <div class="portfolio__work">
+                                    <div class="portfolio__work-image">
+                                        <img src="./img/portfolio/bikeShop.png" alt="">
+                                    </div>
+                                    <div class="portfolio__work-title">
+                                        Bike Shop (html, css)
+                                    </div>
+                                    <a class="portfolio__work-link" href="https://daryaglazunova.github.io/" target="_blank">DaryaGlazunova.github.io</a>
+                                </div>
+                                <div class="portfolio__work">
+                                    <div class="portfolio__work-image">
+                                        <img src="./img/portfolio/minimal.jpg" alt="">
+                                    </div>
+                                    <div class="portfolio__work-title">
+                                        Minimal Shop (html, css, js, react)
+                                    </div>
+                                    <a class="portfolio__work-link" href="https://daryaglazunova.github.io/" target="_blank">DaryaGlazunova.github.io</a>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>  
+            </div>
+
+        </div>
+        <div class="footer">
+            <a name = "contacts"></a>
+            <div class="footer__container">
+                <div class="footer__socialnetworks">
+                    <ul>
+                        <li>
+                            <a href="https://t.me/kochetttygova" class="footer__img"  target="_blank">
+                                <img src="./img/footer/telegram.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/DaryaGlazunova" class="footer__img"  target="_blank">
+                                <img src="./img/footer/github.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kochetttygova" class="footer__img"  target="_blank">
+                                <img src="./img/footer/instagram.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__text">
+                    Со мной можно связаться в телеграме или WatsApp по номеру <span>+79165682688</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/about.js"></script>
+    <script src="./js/catmem.js"></script>
+    <script src="./js/portfolio.js"></script>
+</body>
+</html>

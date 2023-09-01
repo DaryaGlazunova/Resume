@@ -1,0 +1,129 @@
+.title {
+
+    &__top {
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 13px;
+            height: 1px;
+            width: 16px;
+            background-color: $fontColorGrey;
+            opacity: 0.8;
+
+        }
+        & span{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2;
+            letter-spacing: 7.5px;
+            color: $fontColorGrey;
+            text-transform: uppercase;
+            margin: 0 0 0 25px;
+        }
+    }
+
+    &__bottom {
+        font-family: $minorFont;
+        font-size: 44px;
+        font-weight: bold;
+        color: $fontColorBlack;
+       // text-align: left;
+        & span{
+            color: $fontColorGreen;
+        }
+       
+      
+    }
+}
+
+
+.slider {
+    position: relative;
+    &__wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__items {
+        position: relative;
+    }
+
+    &__item {
+        display: inline-block;
+        display: none;
+        &_active {
+            display: inline-block;
+        }
+
+    }
+
+
+    &__buttons {
+        margin-top: 50px;
+
+        
+    }
+
+    &__btn-prev {
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $backgroundColorGreen-light;
+        @media(max-width:800px) {
+            font-size: 20px;
+            padding: 15px;
+            margin-right: 20px;
+        }
+    }
+
+    &__btn-next {
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $backgroundColorGreen-light;
+        @media(max-width:800px) {
+            font-size: 20px;
+            padding: 15px;
+        }
+    }
+}
+
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    
+
+
+}
+
+
+
+.swiper-container .swiper-button-prev {
+	color: $fontColorGrey;
+    left: -40px;
+    @media(max-width:800px) {
+        display: none;
+    }
+	
+}
+.swiper-container .swiper-button-next {
+	color: $fontColorGrey;
+    right: -40px;
+    @media(max-width:800px) {
+        display: none;
+    }
+}
+
+.swiper-container .swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	font-size: 14px;
+	background-color: $backgroundColorGreen;
+    
+   
+}
+.swiper-container .swiper-pagination{
+    bottom: -30px!important;
+}
